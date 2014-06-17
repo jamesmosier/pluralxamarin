@@ -12,6 +12,7 @@ using System.Web.Routing;
 using ServiceStack.WebHost.Endpoints;
 using ServiceStack.ServiceHost;
 using Funq;
+using ProteinTrackerMVC.Api;
 
 namespace ProteinTrackerMVC
 {
@@ -36,9 +37,7 @@ namespace ProteinTrackerMVC
     public class ProteinTrackerAppHost : AppHostBase
     {
         //https://github.com/ServiceStackV3/ServiceStackV3/wiki/Create-your-first-webservice
-        public class HelloService
-        {
-        }
+        
 
         public ProteinTrackerAppHost() : base("Protein Tracker Web Services", typeof(HelloService).Assembly) { }
 
