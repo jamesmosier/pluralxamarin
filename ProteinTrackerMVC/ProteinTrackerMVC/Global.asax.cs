@@ -13,6 +13,7 @@ using ServiceStack.WebHost.Endpoints;
 using ServiceStack.ServiceHost;
 using Funq;
 using ProteinTrackerMVC.Api;
+using ServiceStack.Redis;
 
 namespace ProteinTrackerMVC
 {
@@ -37,13 +38,16 @@ namespace ProteinTrackerMVC
     public class ProteinTrackerAppHost : AppHostBase
     {
         //https://github.com/ServiceStackV3/ServiceStackV3/wiki/Create-your-first-webservice
-        
+
 
         public ProteinTrackerAppHost() : base("Protein Tracker Web Services", typeof(HelloService).Assembly) { }
 
         public override void Configure(Container container)
         {
             SetConfig(new EndpointHostConfig { ServiceStackHandlerFactoryPath = "api" });
+
+            container.Register<IRedisClientsManager>(x => new PooledRedisClientManager());
+            container.Register<IRepository>(x => new Repository(x.Resolve<IRedisClientsManager>()));
         }
     }
 }

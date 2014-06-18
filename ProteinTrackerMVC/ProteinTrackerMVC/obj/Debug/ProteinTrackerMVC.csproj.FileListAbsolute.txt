@@ -48,3 +48,4 @@ C:\Git\pluralxamarin\ProteinTrackerMVC\ProteinTrackerMVC\bin\System.Web.Helpers.
 C:\Git\pluralxamarin\ProteinTrackerMVC\ProteinTrackerMVC\bin\System.Web.Providers.xml
 C:\Git\pluralxamarin\ProteinTrackerMVC\ProteinTrackerMVC\obj\Debug\ProteinTrackerMVC.csprojResolveAssemblyReference.cache
 C:\Git\pluralxamarin\ProteinTrackerMVC\ProteinTrackerMVC\bin\System.Web.Optimization.xml
+C:\Git\pluralxamarin\ProteinTrackerMVC\ProteinTrackerMVC\bin\ProteinTrackerMVC.dll.config

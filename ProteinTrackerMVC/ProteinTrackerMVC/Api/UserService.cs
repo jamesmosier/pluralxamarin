@@ -9,10 +9,11 @@ namespace ProteinTrackerMVC.Api
 {
     public class UserService : Service
     {
+        public IRepository Repository { get; set; }
         public object Post(AddUser request)
         {
-            //add the user
-            return new AddUserResponse { UserId = 255 };
+            var id = Repository.AddUser(request.Name, request.Goal);
+            return new AddUserResponse { UserId = id };
         }
     }
 
@@ -28,5 +29,5 @@ namespace ProteinTrackerMVC.Api
         public int Goal { get; set; }
     }
 
-    
+
 }

@@ -8,7 +8,7 @@
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{4210FD99-9F36-428C-8354-1C91B6BB35D0}</ProjectGuid>
-    <ProjectTypeGuids>{E3E379DF-F4C6-4180-9B81-6769533ABE47};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ProteinTrackerMVC</RootNamespace>
@@ -155,8 +155,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Api\AddUser.cs" />
     <Compile Include="Api\HelloService.cs" />
+    <Compile Include="Api\Repository.cs" />
+    <Compile Include="Api\User.cs" />
     <Compile Include="Api\UserService.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
