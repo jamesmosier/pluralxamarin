@@ -15,6 +15,22 @@ namespace ProteinTrackerMVC.Api
             var id = Repository.AddUser(request.Name, request.Goal);
             return new AddUserResponse { UserId = id };
         }
+
+        public object Get(Users request)
+        {
+            return new UsersResponse { Users = Repository.GetUsers() };
+        }
+    }
+
+    public class UsersResponse
+    {
+        public IEnumerable<User> Users { get; set; }
+    }
+
+    [Route("/users", "GET")]
+    public class Users
+    {
+
     }
 
     public class AddUserResponse

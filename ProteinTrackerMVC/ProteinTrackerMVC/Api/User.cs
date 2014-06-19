@@ -5,7 +5,7 @@ using System.Text;
 
 namespace ProteinTrackerMVC.Api
 {
-    class User
+    public class User
     {
         public string Name { get; set; }
         public int Goal { get; set; }

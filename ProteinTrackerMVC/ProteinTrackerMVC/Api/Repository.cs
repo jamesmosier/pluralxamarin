@@ -9,6 +9,7 @@ namespace ProteinTrackerMVC.Api
     public interface IRepository
     {
         long AddUser(string name, int goal);
+        IEnumerable<User> GetUsers();
     }
     public class Repository : IRepository
     {
@@ -29,5 +30,15 @@ namespace ProteinTrackerMVC.Api
                 return user.Id;
             }
         }
+
+        public IEnumerable<User> GetUsers()
+        {
+            using (var redisClient = RedisManager.GetClient())
+            {
+                var redisUsers = redisClient.As<User>();
+                return redisUsers.GetAll();
+            }
+        }
+
     }
 }
