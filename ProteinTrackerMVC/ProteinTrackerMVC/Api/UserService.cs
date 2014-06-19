@@ -20,6 +20,26 @@ namespace ProteinTrackerMVC.Api
         {
             return new UsersResponse { Users = Repository.GetUsers() };
         }
+
+        public object Post(AddProtein request)
+        {
+            var user = Repository.GetUsers(request.UserId);
+            user.Total += request.Amount;
+            Repository.UpdateUser(user);
+            return new AddProteinResponse { NewTotal = user.Total };
+        }
+    }
+
+    public class AddProteinResponse
+    {
+        public int NewTotal { get; set; }
+    }
+
+    [Route("/user/{userid}", "POST")]
+    public class AddProtein
+    {
+        public long UserId { get; set; }
+        public int Amount { get; set; }
     }
 
     public class UsersResponse
