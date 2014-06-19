@@ -35,7 +35,7 @@ namespace ProteinTrackerMVC.Api
         public int NewTotal { get; set; }
     }
 
-    [Route("/user/{userid}", "POST")]
+    [Route("/users/{userid}", "POST")]
     public class AddProtein
     {
         public long UserId { get; set; }
