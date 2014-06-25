@@ -1,0 +1,13 @@
+C:\Git\android\WIP\ProteinTrackerAndroid\ProteinTrackerAndroid\bin\Debug\ProteinTrackerAndroid.dll
+C:\Git\android\WIP\ProteinTrackerAndroid\ProteinTrackerAndroid\bin\Debug\ProteinTrackerAndroid.pdb
+C:\Git\android\WIP\ProteinTrackerAndroid\ProteinTrackerAndroid\bin\Debug\ProteinTrackerAndroid.dll.mdb
+C:\Git\android\WIP\ProteinTrackerAndroid\ProteinTrackerAndroid\bin\Debug\ProteinTrackerAndroid.ProteinTrackerAndroid.apk
+C:\Git\android\WIP\ProteinTrackerAndroid\ProteinTrackerAndroid\bin\Debug\ProteinTrackerAndroid.ProteinTrackerAndroid-Signed.apk
+C:\Git\android\WIP\ProteinTrackerAndroid\ProteinTrackerAndroid\obj\Debug\ProteinTrackerAndroid.dll
+C:\Git\android\WIP\ProteinTrackerAndroid\ProteinTrackerAndroid\obj\Debug\ProteinTrackerAndroid.pdb
+C:\Git\android\WIP\ProteinTrackerAndroid\ProteinTrackerAndroid\obj\Debug\android\bin\ProteinTrackerAndroid.ProteinTrackerAndroid.apk
+C:\Git\android\WIP\ProteinTrackerAndroid\ProteinTrackerAndroid\obj\Debug\res\layout\main.xml
+C:\Git\android\WIP\ProteinTrackerAndroid\ProteinTrackerAndroid\obj\Debug\res\values\strings.xml
+C:\Git\android\WIP\ProteinTrackerAndroid\ProteinTrackerAndroid\obj\Debug\res\drawable\icon.png
+C:\Git\android\WIP\ProteinTrackerAndroid\ProteinTrackerAndroid\obj\Debug\R.cs.flag
+C:\Git\android\WIP\ProteinTrackerAndroid\ProteinTrackerAndroid\obj\Debug\uploadflags.txt
