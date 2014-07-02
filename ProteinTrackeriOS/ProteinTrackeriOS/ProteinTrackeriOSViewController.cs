@@ -3,12 +3,20 @@ using System.Drawing;
 
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
+using ProteinTrackerMVC.Api;
+using ProteinTrackerTest;
+using System.Collections.Generic;
 
 namespace ProteinTrackeriOS
 {
 	public partial class ProteinTrackeriOSViewController : UIViewController
 	{
-		public ProteinTrackeriOSViewController (IntPtr handle) : base (handle)
+		//OG ..was here before july 2
+//		public ProteinTrackeriOSViewController (IntPtr handle) : base (handle)
+//		{
+//		}
+
+		public ProteinTrackeriOSViewController () : base ("ProteinTrackeriOSViewController")
 		{
 		}
 
@@ -20,7 +28,7 @@ namespace ProteinTrackeriOS
 			// Release any cached data, images, etc that aren't in use.
 		}
 
-		#region View lifecycle
+		//#region View lifecycle
 
 		public override void ViewDidLoad ()
 		{
@@ -29,27 +37,39 @@ namespace ProteinTrackeriOS
 
 		}
 
-		public override void ViewWillAppear (bool animated)
-		{
-			base.ViewWillAppear (animated);
-		}
+//		public override bool ShouldAutorotateToInterfaceOrientation(UIInterfaceOrientation)
+//		{
+//
+//		}
 
-		public override void ViewDidAppear (bool animated)
-		{
-			base.ViewDidAppear (animated);
-		}
+//		public override void ViewWillAppear (bool animated)
+//		{
+//			base.ViewWillAppear (animated);
+//		}
+//
+//		public override void ViewDidAppear (bool animated)
+//		{
+//			base.ViewDidAppear (animated);
+//		}
+//
+//		public override void ViewWillDisappear (bool animated)
+//		{
+//			base.ViewWillDisappear (animated);
+//		}
+//
+//		public override void ViewDidDisappear (bool animated)
+//		{
+//			base.ViewDidDisappear (animated);
+//		}
 
-		public override void ViewWillDisappear (bool animated)
-		{
-			base.ViewWillDisappear (animated);
-		}
+		//#endregion
+	}
 
-		public override void ViewDidDisappear (bool animated)
+	public class UserPickerModel : GenericPickerModel<User>
+	{
+		public UserPickerModel(IList<User> users) : base(users)
 		{
-			base.ViewDidDisappear (animated);
 		}
-
-		#endregion
 	}
 }
 

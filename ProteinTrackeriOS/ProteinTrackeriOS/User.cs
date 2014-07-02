@@ -14,6 +14,11 @@ namespace ProteinTrackerMVC.Api
 		public int Goal { get; set; }
 		public int Total { get; set; }
 		public long Id { get; set; }
+
+		public override string ToString ()
+		{
+			return Name;
+		}
 	}
 
 	public class AddProteinResponse

@@ -2,7 +2,7 @@
 using MonoTouch.UIKit;
 using System.Collections.Generic;
 
-namespace ProteinTrackeriOS
+namespace ProteinTrackerTest
 {
 	public abstract class GenericPickerModel<TItem> : UIPickerViewModel
 	{
@@ -65,6 +65,11 @@ namespace ProteinTrackeriOS
 		public virtual string GetTitleForItem(TItem item)
 		{
 			return item.ToString ();
+		}
+
+		bool NoItem(int row = 0)
+		{
+			return Items == null || row >= Items.Count;
 		}
 
 	}
