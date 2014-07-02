@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>63EC7E02-08A0-4FC6-BC1B-64CF9E713E35</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ProteinTrackeriOS</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>296D55B2-75FF-4165-AD94-D70896974825</key>
+		<string>https://github.com/jamez14/pluralxamarin.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ProteinTrackeriOS/ProteinTrackeriOS/obj/Xcode/1/ProteinTrackeriOS.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>296D55B2-75FF-4165-AD94-D70896974825</key>
+		<string>../../../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/jamez14/pluralxamarin.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>296D55B2-75FF-4165-AD94-D70896974825</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>296D55B2-75FF-4165-AD94-D70896974825</string>
+			<key>IDESourceControlWCCName</key>
+			<string>pluralxamarin</string>
+		</dict>
+	</array>
+</dict>
+</plist>

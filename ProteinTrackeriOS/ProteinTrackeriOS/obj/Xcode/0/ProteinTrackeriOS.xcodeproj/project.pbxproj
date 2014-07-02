@@ -1,0 +1,230 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2AE2D6320000000000000000 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E73E2D00000000000000000 /* UIKit.framework */; };
+		C78796500000000000000000 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 100986030000000000000000 /* MapKit.framework */; };
+		21ABE1FD0000000000000000 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 253CEE9B0000000000000000 /* Foundation.framework */; };
+		1516C4460000000000000000 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A7D0E40000000000000000 /* CoreGraphics.framework */; };
+		2DAECE250000000000000000 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 313FDAC30000000000000000 /* Default-568h@2x.png */; };
+		2E236BD00000000000000000 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 673435B00000000000000000 /* Info.plist */; };
+		310CF7A70000000000000000 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 349E04450000000000000000 /* Entitlements.plist */; };
+		1F37B8910000000000000000 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22C8C52F0000000000000000 /* MainStoryboard.storyboard */; };
+		2B6710100000000000000000 /* AppDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = 2EF81CAE0000000000000000 /* AppDelegate.h */; };
+		3F8A22A00000000000000000 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 789AEC800000000000000000 /* AppDelegate.m */; };
+		192C0AC20000000000000000 /* ProteinTrackeriOSViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 1CBD17600000000000000000 /* ProteinTrackeriOSViewController.h */; };
+		2ACE66BC0000000000000000 /* ProteinTrackeriOSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5F735A0000000000000000 /* ProteinTrackeriOSViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		276CB0CF0000000000000000 /* ProteinTrackeriOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "ProteinTrackeriOS.app"; path = "ProteinTrackeriOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E73E2D00000000000000000 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "UIKit.framework"; path = "System/Library/Frameworks/UIKit.framework"; sourceTree = SDKROOT; };
+		100986030000000000000000 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "MapKit.framework"; path = "System/Library/Frameworks/MapKit.framework"; sourceTree = SDKROOT; };
+		253CEE9B0000000000000000 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Foundation.framework"; path = "System/Library/Frameworks/Foundation.framework"; sourceTree = SDKROOT; };
+		18A7D0E40000000000000000 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreGraphics.framework"; path = "System/Library/Frameworks/CoreGraphics.framework"; sourceTree = SDKROOT; };
+		313FDAC30000000000000000 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		673435B00000000000000000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info.plist"; path = "Info.plist"; sourceTree = "<group>"; };
+		349E04450000000000000000 /* Entitlements.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Entitlements.plist"; path = "Entitlements.plist"; sourceTree = "<group>"; };
+		22C8C52F0000000000000000 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "MainStoryboard.storyboard"; path = "MainStoryboard.storyboard"; sourceTree = "<group>"; };
+		2EF81CAE0000000000000000 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "AppDelegate.h"; path = "AppDelegate.h"; sourceTree = "<group>"; };
+		789AEC800000000000000000 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "AppDelegate.m"; path = "AppDelegate.m"; sourceTree = "<group>"; };
+		1CBD17600000000000000000 /* ProteinTrackeriOSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ProteinTrackeriOSViewController.h"; path = "ProteinTrackeriOSViewController.h"; sourceTree = "<group>"; };
+		2E5F735A0000000000000000 /* ProteinTrackeriOSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "ProteinTrackeriOSViewController.m"; path = "ProteinTrackeriOSViewController.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		427F8DB00000000000000000 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AE2D6320000000000000000 /* UIKit.framework in Frameworks */,
+				C78796500000000000000000 /* MapKit.framework in Frameworks */,
+				21ABE1FD0000000000000000 /* Foundation.framework in Frameworks */,
+				1516C4460000000000000000 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		24416A690000000000000000 = {
+			isa = PBXGroup;
+			children = (
+				EDB1EB500000000000000000 /* ProteinTrackeriOS */,
+				32859CE10000000000000000 /* Frameworks */,
+				198E448F0000000000000000 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		198E448F0000000000000000 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				276CB0CF0000000000000000 /* ProteinTrackeriOS.app */,
+			);
+			name = "Products";
+			sourceTree = "<group>";
+		};
+		32859CE10000000000000000 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2E73E2D00000000000000000 /* UIKit.framework */,
+				100986030000000000000000 /* MapKit.framework */,
+				253CEE9B0000000000000000 /* Foundation.framework */,
+				18A7D0E40000000000000000 /* CoreGraphics.framework */,
+			);
+			name = "Frameworks";
+			sourceTree = "<group>";
+		};
+		EDB1EB500000000000000000 /* ProteinTrackeriOS */ = {
+			isa = PBXGroup;
+			children = (
+				2EF81CAE0000000000000000 /* AppDelegate.h */,
+				313FDAC30000000000000000 /* Default-568h@2x.png */,
+				349E04450000000000000000 /* Entitlements.plist */,
+				673435B00000000000000000 /* Info.plist */,
+				22C8C52F0000000000000000 /* MainStoryboard.storyboard */,
+				1CBD17600000000000000000 /* ProteinTrackeriOSViewController.h */,
+				5DA9A0700000000000000000 /* Supporting Files */,
+			);
+			name = "ProteinTrackeriOS";
+			sourceTree = "<group>";
+		};
+		5DA9A0700000000000000000 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				789AEC800000000000000000 /* AppDelegate.m */,
+				2E5F735A0000000000000000 /* ProteinTrackeriOSViewController.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		333642160000000000000000 /* ProteinTrackeriOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CB98AF50000000000000000 /* Build configuration list for PBXNativeTarget "ProteinTrackeriOS" */;
+			buildPhases = (
+				2EC1AD270000000000000000 /* Sources */,
+				427F8DB00000000000000000 /* Frameworks */,
+				17AC4CB20000000000000000 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ProteinTrackeriOS";
+			productName = "ProteinTrackeriOS";
+			productReference = 276CB0CF0000000000000000 /* ProteinTrackeriOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		28831C3C0000000000000000 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = E75587D00000000000000000 /* Build configuration list for PBXProject "ProteinTrackeriOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 24416A690000000000000000;
+			productRefGroup = 198E448F0000000000000000 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				333642160000000000000000 /* ProteinTrackeriOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		17AC4CB20000000000000000 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DAECE250000000000000000 /* Default-568h@2x.png in Resources */,
+				2E236BD00000000000000000 /* Info.plist in Resources */,
+				310CF7A70000000000000000 /* Entitlements.plist in Resources */,
+				1F37B8910000000000000000 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2EC1AD270000000000000000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B6710100000000000000000 /* AppDelegate.h in Sources */,
+				3F8A22A00000000000000000 /* AppDelegate.m in Sources */,
+				192C0AC20000000000000000 /* ProteinTrackeriOSViewController.h in Sources */,
+				2ACE66BC0000000000000000 /* ProteinTrackeriOSViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2706EA970000000000000000 /* MonoTouch */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+			};
+			name = MonoTouch;
+		};
+		3C232A300000000000000000 /* MonoTouch */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				PRODUCT_NAME = "ProteinTrackeriOS";
+				WRAPPER_EXTENSION = app;
+			};
+			name = MonoTouch;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E75587D00000000000000000 /* Build configuration list for PBXProject "ProteinTrackeriOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2706EA970000000000000000 /* MonoTouch */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = MonoTouch;
+		};
+		1CB98AF50000000000000000 /* Build configuration list for PBXNativeTarget "ProteinTrackeriOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C232A300000000000000000 /* MonoTouch */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = MonoTouch;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 28831C3C0000000000000000 /* Project object */;
+}
