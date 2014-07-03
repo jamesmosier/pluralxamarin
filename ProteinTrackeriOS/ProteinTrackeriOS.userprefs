@@ -2,9 +2,9 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhoneRetina4.7.1" />
   <MonoDevelop.Ide.Workbench ActiveDocument="ProteinTrackeriOS/ProteinTrackeriOSViewController.cs">
     <Files>
-      <File FileName="ProteinTrackeriOS/AppDelegate.cs" Line="1" Column="1" />
-      <File FileName="ProteinTrackeriOS/ProteinTrackeriOSViewController.cs" Line="21" Column="4" />
-      <File FileName="ProteinTrackeriOS/ProteinTrackeriOSViewController.designer.cs" Line="1" Column="1" />
+      <File FileName="ProteinTrackeriOS/ProteinTrackeriOSViewController.cs" Line="43" Column="1" />
+      <File FileName="ProteinTrackeriOS/GenericPickerModel.cs" Line="5" Column="29" />
+      <File FileName="ProteinTrackeriOS/User.cs" Line="36" Column="28" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -1,10 +1,10 @@
 ﻿using ServiceStack.ServiceHost;
-using ServiceStack.ServiceInterface;
+//using ServiceStack.ServiceInterface;
 using System;
 using System.Text;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
+//using System.Web;
 
 namespace ProteinTrackerMVC.Api
 {
@@ -39,7 +39,7 @@ namespace ProteinTrackerMVC.Api
 	}
 
 	[Route("/users", "GET")]
-	public class Users : IReturn<AddProteinResponse>
+	public class Users : IReturn<UsersResponse>
 	{
 
 	}

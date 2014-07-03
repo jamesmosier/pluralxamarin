@@ -1,22 +1,22 @@
 ﻿using System;
 using System.Drawing;
-
+using System.Linq;
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 using ProteinTrackerMVC.Api;
 using ProteinTrackerTest;
 using System.Collections.Generic;
+using ServiceStack.ServiceClient.Web;
 
 namespace ProteinTrackeriOS
 {
 	public partial class ProteinTrackeriOSViewController : UIViewController
 	{
-		//OG ..was here before july 2
-//		public ProteinTrackeriOSViewController (IntPtr handle) : base (handle)
-//		{
-//		}
+		private JsonServiceClient client;
+		private IList<User> users;
 
-		public ProteinTrackeriOSViewController () : base ("ProteinTrackeriOSViewController")
+		//public ProteinTrackeriOSViewController () : base ("ProteinTrackeriOSViewController")
+		public ProteinTrackeriOSViewController (IntPtr handle) : base (handle)
 		{
 		}
 
@@ -28,46 +28,57 @@ namespace ProteinTrackeriOS
 			// Release any cached data, images, etc that aren't in use.
 		}
 
-		//#region View lifecycle
-
 		public override void ViewDidLoad ()
 		{
 			base.ViewDidLoad ();
-			
 
+			//allows us to get rid of keyboard by tapping outside an input
+			var tap = new UITapGestureRecognizer ();
+			tap.AddTarget (() => {
+				View.EndEditing (true);
+			});
+			View.AddGestureRecognizer (tap);
+
+
+			client = new JsonServiceClient ("http://192.168.1.8:8080/api");
+
+			PopulateUsers ();
+
+			addUserButton.TouchUpInside += (object sender, EventArgs e) => {
+				client.Send (new AddUser{ Name = nameText.Text, Goal = int.Parse (goalText.Text) });
+				nameText.Text = string.Empty;
+				goalText.Text = string.Empty;
+				PopulateUsers ();
+			};
+
+			addAmountButton.TouchUpInside += (object sender, EventArgs e) => {
+				var userPickerModel = selectUserPicker.Model as UserPickerModel;
+				var response = client.Send (new AddProtein{ Amount = int.Parse (amountText.Text), UserId = userPickerModel.SelectedItem.Id });
+				userPickerModel.SelectedItem.Total = response.NewTotal;
+				totalLabel.Text = response.NewTotal.ToString ();
+			};
 		}
 
-//		public override bool ShouldAutorotateToInterfaceOrientation(UIInterfaceOrientation)
-//		{
-//
-//		}
 
-//		public override void ViewWillAppear (bool animated)
-//		{
-//			base.ViewWillAppear (animated);
-//		}
-//
-//		public override void ViewDidAppear (bool animated)
-//		{
-//			base.ViewDidAppear (animated);
-//		}
-//
-//		public override void ViewWillDisappear (bool animated)
-//		{
-//			base.ViewWillDisappear (animated);
-//		}
-//
-//		public override void ViewDidDisappear (bool animated)
-//		{
-//			base.ViewDidDisappear (animated);
-//		}
+		void PopulateUsers ()
+		{
+			users = client.Get (new Users ()).Users.ToList ();
 
-		//#endregion
+			var model = new UserPickerModel (users);
+			model.ItemSelected += (object sender, EventArgs e) => {
+				goalLabel.Text = model.SelectedItem.Goal.ToString();
+				totalLabel.Text = model.SelectedItem.Total.ToString();
+			};
+
+			selectUserPicker.Model = model;
+		}
+
+		//public override bool ShouldAutorotateToInterfaceOrientation
 	}
 
 	public class UserPickerModel : GenericPickerModel<User>
 	{
-		public UserPickerModel(IList<User> users) : base(users)
+		public UserPickerModel (IList<User> users) : base (users)
 		{
 		}
 	}

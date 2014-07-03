@@ -3,3 +3,11 @@ System.dll
 System.Core.dll
 Mono.Dynamic.Interpreter.dll
 System.Xml.dll
+ServiceStack.Common.MonoTouch.dll
+ServiceStack.Interfaces.MonoTouch.dll
+System.Data.dll
+Mono.Data.Tds.dll
+Mono.Security.dll
+System.Transactions.dll
+System.Runtime.Serialization.dll
+ServiceStack.Text.MonoTouch.dll

@@ -17,6 +17,12 @@
 	/Developer/MonoTouch/usr/lib/mono/2.1/System.Core.dll \
 	-r \
 	/Developer/MonoTouch/usr/lib/mono/2.1/monotouch.dll \
+	-r \
+	/Users/James/Sites/pluralxamarin/ServicesStack/ServiceStack/src/ServiceStack.MonoTouch/ServiceStack.Common.MonoTouch/bin/Debug/ServiceStack.Common.MonoTouch.dll \
+	-r \
+	/Users/James/Sites/pluralxamarin/ServicesStack/ServiceStack/src/ServiceStack.MonoTouch/ServiceStack.Common.MonoTouch/bin/Debug/ServiceStack.Interfaces.MonoTouch.dll \
+	-r \
+	/Users/James/Sites/pluralxamarin/ServicesStack/ServiceStack/src/ServiceStack.MonoTouch/ServiceStack.Common.MonoTouch/bin/Debug/ServiceStack.Text.MonoTouch.dll \
 	-debug \
 	-nolink \
 	-sdk \
